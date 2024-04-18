@@ -14,11 +14,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="overflow-x-hidden max-w-screen">
         <ThemeContextProvider>
           <ThemeProvider>
-            <div className="container">
-              <div className="wrapper">
+            <div className=" min-h-screen  bg-custom-bg  custom-text w-screen overflow-x-hidden">
+              <div className=" max-w-475 sm:max-w-640 2xl:max-w-1536 xl:max-w-1366 lg:max-w-1024 md:max-w-768  mx-auto px-80 justify-center ">
                 <NavBar />
                 {children}
               </div>

@@ -8,19 +8,10 @@ module.exports = {
   theme: {
     screens: {
       'sm': '640px',
-      // => @media (min-width: 640px) { ... }
-
       'md': '768px',
-      // => @media (min-width: 768px) { ... }
-
       'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
-
       'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
-
       '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
     },
     extend: {
       height: {
@@ -28,8 +19,23 @@ module.exports = {
       },
       colors: {
         'custom-bg': 'var(--bg)', // Using CSS variable
+        'custom-text': 'var(--textColor)', // Using CSS variable
+        'custom-soft-bg': 'var(--softBg)', // Using CSS variable
+        'custom-soft-text': 'var(--softTextColor)', // Using CSS variable
+        
       },
-      
+      maxWidth: {
+        '1536': '1536px', 
+        '1366': '1366px', // Adding a custom maxWidth for screens up to 1536px
+        '1024': '1024px', // Adding a custom maxWidth for screens up to 1280px
+        '768': '768px', // Adding a custom maxWidth for screens up to 1024px
+        '640': '640px', // Adding a custom maxWidth for screens up to 768px
+        '475': '475px', // Adding a custom maxWidth for screens up to 640px
+      },
+      padding: {
+        '80': '80px', // Adding padding of 80px
+        '40': '40px', // Adding padding of 40px
+      },
     },
   },
   plugins: [],
